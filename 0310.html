@@ -1,0 +1,81 @@
+<style type="text/css">
+h1 {color: 3333FF	;
+font-family: "微軟正黑體";
+}
+p {
+font-size: 18px;
+font-family: "微軟正黑體";
+color: #669999;
+}
+</style>
+
+<script>
+	var count=1
+	function c(){
+		count++;
+		if(count>2) count=0;
+		var maincontent = "<img src='"+count+".jpg"+"' width=500 heigh=500/>";
+		document.getElementById("content").innerHTML = maincontent;
+	}
+</script>
+
+<!DOCTYPE html>
+<html>
+	<head lang="zh-TW">
+		<title>@@PMTL_homework</title>
+	<body>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h1 align="center">個人資料表</h1>
+		<table border="1" align="center">
+			<tr>
+				<td align="center" width="60px" height="60px">
+					<p>姓名</p>
+				</td>
+				<td align="center" width="90px" height="60px">
+					<p>何芳如</p>
+				</td>
+				<td rowspan="3">
+					<div id="content" onClick="c();">部分資料非真實←點我</div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" width="60px" height="60px">
+					<p>性別</p>
+				</td>
+				<td align="center" width="90px" height="60px">
+					<p>女</p>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" width="60px" height="60px">
+					<p>電話</p>
+				</td>
+				<td align="left" width="90px" height="60px">
+					<p>0905-386104
+				</td>
+			</tr>
+			<tr>
+				<td align="center" width="60px" height="60px">
+					<p>哪裡人</p>
+				</td>
+				<td colspan="2" align="left" width="270px" height="60px">
+					<p>台中市(原台中縣)</p>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" width="60px" height="60px">
+					<p>興趣</p>
+				</td>
+				<td colspan="2" align="left" width="270px" height="60px">
+					<ul>
+						<li><p>看電影</p></li>
+						<li><p>串珠</p></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
